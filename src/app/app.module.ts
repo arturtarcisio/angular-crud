@@ -8,16 +8,19 @@ import { HeaderComponent } from './components/template/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavComponent } from './components/template/nav/nav.component'
+import { NavComponent } from './components/template/nav/nav.component';
 
-import { MatSidenavModule } from '@angular/material/sidenav'
-import { MatCardModule } from '@angular/material/card'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button'
+
 import { HomeComponent } from './view/home/home.component';
 import { ProductCrudComponent } from './view/product-crud/product-crud.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component'
+
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     MatToolbarModule,
     MatSidenavModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
